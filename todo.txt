@@ -1,0 +1,11 @@
+Show current status of car:
+- gear selected, gas, speed, location, total miles, VIN, time
+
+Show current trip:
+- triggered when car is moved from "parked" to any gear
+- minutes/miles traveled, gas used, average speed, path
+- store trip when car placed in "parked"
+
+Show trip history:
+- shows everything as current trip
+- ability to calculate per person gas usage
