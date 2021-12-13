@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Trip } from './trip/trip.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'iot-car-tracker-client';
+  connectionStatus = "Connected";
+
+  trips: Trip[] = [];
 }

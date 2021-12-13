@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseBody" aria-expanded="false"
+        aria-controls="collapseBody" style="cursor: pointer;">
+        <h5 class="card-title">In-Progress</h5>
+    </div>
+    <div class="card-body collapse" id="collapseBody">
+        <p class="card-text"><strong>startDateTime:</strong> {{trip.startDateTime}}</p>
+        <p class="card-text"><strong>endDateTime:</strong> {{trip.endDateTime}}</p>
+        <p class="card-text"><strong>startLocation:</strong> {{trip.startLocation.longitude}},
+            {{trip.startLocation.latitude}}</p>
+        <p class="card-text"><strong>endLocation:</strong> {{trip.endLocation.longitude}}, {{trip.endLocation.latitude}}
+        </p>
+        <p class="card-text"><strong>startMileage:</strong> {{trip.startMileage}} Miles</p>
+        <p class="card-text"><strong>endMileage:</strong> {{trip.endMileage}} Miles</p>
+        <p class="card-text"><strong>updatesReceived:</strong> {{trip.updatesReceived}}</p>
+        <p class="card-text"><strong>gasUsed:</strong> {{trip.gasUsed}} Gallons</p>
+        <p class="card-text"><strong>averageSpeed:</strong> {{trip.averageSpeed}} MPH</p>
+    </div>
+</div>
