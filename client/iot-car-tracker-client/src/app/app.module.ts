@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TripComponent } from './components/trip/trip.component';
 import { CarStatusComponent } from './components/car-status/car-status.component';
+import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
+
+const config: SocketIoConfig = { url: 'http://localhost:4444', options: {} };
 
 @NgModule({
   declarations: [
@@ -14,7 +17,8 @@ import { CarStatusComponent } from './components/car-status/car-status.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]
