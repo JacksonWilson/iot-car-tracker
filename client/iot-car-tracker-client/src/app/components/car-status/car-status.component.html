@@ -1,11 +1,11 @@
-<div class="card">
+<div *ngIf="carStatus" class="card">
     <div class="card-body">
-        <p class="card-text"><strong>Gear:</strong> {{status.gearSelected}}</p>
-        <p class="card-text"><strong>Speed:</strong> {{status.speed}} MPH</p>
-        <p class="card-text"><strong>Location:</strong> {{status.location.longitude}}, {{status.location.latitude}}</p>
-        <p class="card-text"><strong>Gas Level:</strong> {{status.gasLevel}}%</p>
-        <p class="card-text"><strong>Odometer:</strong> {{status.odometer}} Miles</p>
-        <p class="card-text"><strong>VIN:</strong> {{status.vin}}</p>
-        <p class="card-text"><strong>Time:</strong> {{status.time}}</p>
+        <p class="card-text"><strong>Gear:</strong> {{carStatus.gearSelected}}</p>
+        <p class="card-text"><strong>Speed:</strong> {{carStatus.speed}} MPH</p>
+        <p class="card-text"><strong>Location:</strong> {{carStatus.location.longitude}}, {{carStatus.location.latitude}}</p>
+        <p class="card-text"><strong>Gas Level:</strong> {{carStatus.gasLevel}}%</p>
+        <p class="card-text"><strong>Odometer:</strong> {{carStatus.odometer}} Miles</p>
+        <p class="card-text"><strong>VIN:</strong> {{carStatus.vin}}</p>
+        <p class="card-text"><strong>Time:</strong> {{carStatus.time}}</p>
     </div>
 </div>
